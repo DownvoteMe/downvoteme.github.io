@@ -1,0 +1,241 @@
+/* Positioning of the footer */
+footer {    
+    position: relative;
+    width: 100%; /* Width fits the whole screen */
+    padding: 0px 2px 15px 0px; 
+    background-color: rgb(19, 20, 20); 
+    left:0px;
+    bottom:-90px;
+    font-family: 'Comfortaa';
+    font-size: 11px;
+    text-align:center;
+    opacity:1;
+    z-index:9;
+}
+
+/* Color change when hovering on footer links and removing link colours */
+footer a {
+    transition:0.4s;
+    text-decoration:none;
+}
+footer a:link {
+    color:white;
+}
+footer a:visited {
+    color:white;
+}
+footer a:hover {
+    color:gold;
+}
+
+/* Make header move upon hover */
+.nav-link {
+    transition:0.4s;
+  }
+.nav-link:hover {
+    color:gold;
+    font-size:17px;
+    opacity:1.0;
+}
+
+/*Styling of background*/
+.background {
+    position:fixed;
+    top:-300px;
+    background-size: cover;  
+    left:-1px;
+    height:1302px; 
+    width:1950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(2px) brightness(50%);
+}
+
+/*Styling of slide headers*/
+.slideheader {
+    transition:0.4s;
+    position:relative;
+    margin-top:100px;
+    margin-bottom:20px;
+    left:5%;
+    width:20%;
+    color:white;
+    font-family: 'Comfortaa';
+    font-size: calc(20px + 0.5vw);
+    text-align:left;
+    text-shadow: 0px -1px 10px rgb(19, 20, 20);
+    white-space: nowrap
+}
+
+/*Styling of slide captions*/
+.slidecaption {
+    transition:0.4s;
+    position:relative;
+    margin-bottom:30px;
+    padding:20px 20px 10px 20px;
+    left:5%;
+    width:50vw;
+    max-width:350px;
+    background-color:rgb(219, 173, 103);
+    opacity:0.8;
+    color:rgb(19, 20, 20);
+    font-family: 'Comfortaa';
+    font-size: calc(12px + 0.5vw);
+    text-align:left;
+    white-space: nowrap
+}
+
+/*Styling of slide text paragraph*/
+.slidetext {
+    transition:0.4s;
+    position:relative;
+    padding:25px 15px 30px 25px;
+    left:5%;
+    width:50vw;
+    max-width:500px;
+    background-color:rgba(0, 0, 0, 0.61);
+    opacity:1.0;
+    color:white;
+    font-family: 'Comfortaa';
+    font-size: calc(10px + 0.6vw);
+    border-left: white solid 2px;
+}
+
+/*Styling of slide images*/
+.sideimg {
+    position:absolute;
+    top:200px;
+    max-width:600px;
+    left:55%;
+}
+
+/*Styling of main paragraph of text*/
+.textcontainer {
+    background-color: rgb(19, 20, 20);
+    top:710px;
+    position:absolute;
+    padding-top:55px;
+    padding-bottom:100px;
+    width:100vw; /* Fill the full width of screen */
+    opacity:0.9;
+  }
+  
+/*Styling of slide container*/
+.imgcontainer {
+    position:absolute;
+    transition:0.4s;
+    top:310px;
+    background-color:rgba(255, 255, 255, 0.432);
+    padding-top:30px;
+    margin-top:295px; 
+    width:100%; 
+    opacity:1.0;
+}
+
+/*Styling of list items*/
+.list-group-item {
+    color:rgb(206, 206, 206) !important;
+}
+
+/* Positioning of most text/content and styling */
+p {
+    padding-bottom: 2vw; 
+    font-family: 'Comfortaa';
+    font-size: calc(17px + 0.2vw);
+    text-align:left;
+    color:white;
+    z-index:-10;
+    line-height: 1.7em;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+/*Styling of slide text */
+h2 {
+    transition:0.4s;
+    text-align:center;
+    color:white;
+    font-family: 'Comfortaa';
+    font-size: calc(20px + 0.2vw) !important;
+    padding:20px 20px 20px 20px; 
+    text-shadow: 0px -1px 10px rgb(19, 20, 20);
+}
+
+/*Styling of arrows */
+h3 {
+    transition:0.4s;
+    text-align:center;
+    color:white;
+    font-family: 'Comfortaa';
+    font-size: calc(20px + 0.2vw) !important;
+    padding:20px 20px 20px 20px; 
+    text-shadow: 0px -1px 10px rgb(19, 20, 20);
+}
+h3:hover {
+    font-size: calc(22px + 0.2vw) !important;
+    color:rgb(19, 20, 20);
+    text-shadow: 0px -1px 1px rgb(19, 20, 20);
+    cursor:pointer;
+}
+h3:active {
+    font-size: calc(13px + 0.2vw) !important;
+    color:rgb(197, 197, 197);
+    text-shadow: 0px -1px 1px white;
+    cursor:pointer;
+}
+
+/*Styling of subheadings */
+h4 {
+    position:relative;
+    padding-top:5px;
+    padding-bottom:20px;
+    width:100%;
+    text-align:left;
+    transition: 0.4s;
+    font-family: 'Comfortaa';
+    color:gold;
+    z-index: 8;
+}
+/* Color change from red to gold when hovering on paragraph links, removing link colours and underline*/
+p a {
+    transition:0.4s;
+    text-decoration:none;
+}
+p a:link {
+    color:gold;
+}
+p a:visited {
+    color:gold;
+}
+p a:hover {
+    color:red;
+}
+.text {
+    padding-right:70px;
+    padding-left:70px;
+}
+/* Disable x-scrolling and set background */
+html {
+    left:0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Make base background trnsparent */
+body {
+    background-color: transparent !important;
+}
+
+/* Configuration of scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background:rgb(19, 20, 20);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }

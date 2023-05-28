@@ -1,0 +1,114 @@
+/* Positioning of the footer */
+footer {    
+    position: fixed; /* Not affected by scrolling down */
+    width: 100%; /* Width fits the whole screen */
+    padding: 0px 2px 15px 0px; 
+    background-color: rgb(19, 20, 20); 
+    left:0px;
+    bottom:0px;
+    font-family: 'Comfortaa';
+    font-size: 11px;
+    text-align:center;
+    opacity:1;
+    z-index:9;
+}
+
+/* Make navbar links move upon hovering */
+.nav-link {
+    transition:0.4s;
+  }
+  .nav-link:hover {
+    color:gold;
+    font-size:17px;
+    opacity:1.0;
+}
+
+/* Color change when hovering on footer links and removing link colours */
+footer a {
+    transition:0.4s;
+    text-decoration:none;
+}
+footer a:link {
+    color:white;
+}
+footer a:visited {
+    color:white;
+}
+footer a:hover {
+    color:gold;
+}
+
+/* Positioning of text/content */
+p {    
+    position: fixed; 
+    width: 100%; 
+    padding: 30px 0px; 
+    background-color: black;
+    left:0px;
+    bottom:50px;
+    border-color:white;
+    border-width: 2px;
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    text-align:center;
+    opacity:0.6
+}
+
+/* Positioning and styling of header */
+h1 {
+    position: fixed; 
+    width: 100%;
+    top: 150px;
+    font-family: 'Comfortaa';
+    font-size: 40px;
+    text-align:center;
+    color:white;
+    text-shadow: 0px -1px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Positioning of second subheading  */
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    width: 100%;
+    top: 300px;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    text-align:center;
+    color:white;
+    text-shadow: 0px -1px 10px rgba(255, 255, 255, 0.5);
+    opacity:0.75;
+}
+
+/* Positioning and styling of time display */
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    width: 100%;
+    top: 350px;
+    font-family: 'Comfortaa';
+    font-size: 30px;
+    text-align:center;
+    color:gold;
+    text-shadow: 0px -1px 5px rgb(194, 165, 0);
+    opacity:0.8;
+}
+
+/* Set background styling*/
+.background {
+    background-size: cover;  
+    height:800px; 
+    width:1919px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Set overflow to be hidden */
+html {
+    overflow-y:hidden;
+    overflow-x:hidden;
+}

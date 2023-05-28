@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Set webpage language to english -->
+   <head>
+      <!-- Importing stylesheet-->
+      <link href='../css/Feedback_layout.css' rel='stylesheet'>
+      <!-- Import css stylesheet -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Set width for device width-->
+      <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+      <!-- Import fonts-->
+      <script src="../javascript/dropdown.js"></script> <!-- Import scripts-->  
+      <title>Feedback</title>
+      <!-- Set title-->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <!-- Header -->
+      <h1>
+         &#9830; <br> Feedback
+      </h1>
+      <!-- Set up navbar -->
+      <nav class=" fixed-top navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+         <!-- Responsiveness - collapses into a button if screen is small-->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Navbar contents-->
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" style="color:green" href="index.html">&#10022;</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Feedback <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="CourseAndCareer.html">Course and Career</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="CurrentExperience.html">Current Experience</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PastExperiences.html">Past Experiences</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="AboutMe.html">About Me</a>
+               </li>
+            </ul>
+            <!-- Search bar-->
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+         </div>
+      </nav>
+
+      <!-- Feedback forms -->
+      <div class = "feedback">
+         <div class="textcontainer container-fluid">
+            <div class= 'row justify-content-center'>
+               <div class = "col mx-5 px-1 col-sm-12 col-12 col-lg-3 box">
+                  <form>
+                     <!-- Email textbox -->
+                     <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                     </div>
+                     <!-- Password textbox -->
+                     <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                     </div>
+                     <div class="row">
+                        <div class="col">
+                           <!-- Name textboxs -->
+                           <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                           <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="form-check">
+                           <br>
+                           <!-- Checkbox-->
+                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                           <label class="form-check-label" for="exampleCheck1">Do you want to receive updates about this website?</label>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class = "col mx-5 px-1 col-sm-12 col-12  col-lg-3 box">
+                  <form>
+                     <div class="form-group">
+                        <!-- Option box -->
+                        <label for="exampleFormControlSelect1">After reading this website, how much do you want (your child) to join a Polytechnic?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                           <option>1</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                        </select>
+                     </div>
+                     <div class="form-group">
+                        <!-- Clickable option box -->
+                        <label for="exampleFormControlSelect2">How much would you rate this website?</label>
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                           <option>1</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                        </select>
+                     </div>
+                  </form>
+               </div>
+               <div class = "col mx-5 px-1 col-sm-12 col-12 col-lg-3 box">
+                  <!-- Radio -->
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                     <label class="form-check-label" for="exampleRadios1">
+                     I enjoy the responsiveness of the website the most.
+                     </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                     <label class="form-check-label" for="exampleRadios2">
+                     I enjoy the design of the website the most.
+                     </label>
+                  </div>
+                  <div class="form-check disabled">
+                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                     <label class="form-check-label" for="exampleRadios3">
+                     I enjoy the effeciency of the website the most.
+                     </label>
+                  </div>
+                  <div>
+                     <br>
+                  </div>
+                  <!-- Textbox -->
+                  <div class="form-group">
+                     <label for="exampleFormControlTextarea1">Other feedback</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <!-- Submit button-->
+                  <button type="submit" class="btn btn-primary">Submit</button>
+               </div>
+            </div>
+         </div>
+      <!-- Contact details -->
+      <footer>______________________________________________________________________________________________________________________________________________________________________________________________________________<br /><br /> Contact Me<br />
+         DANIELONG.21@ichat.sp.edu.sg | 90601955 | <a href="https://twitter.com/downvote_me" target="_blank">https://twitter.com/downvote_me</a> 
+      </footer>
+   </div>
+   </body>
+</html>

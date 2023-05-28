@@ -1,0 +1,183 @@
+/* Make header move upon hover */
+.nav-link {
+    transition:0.4s;
+  }
+.nav-link:hover {
+    color:gold;
+    font-size:17px;
+    opacity:1.0;
+}
+/* Positioning of the footer */
+footer {    
+    position: relative; /* Not affected by scrolling down */
+    width: 100%; /* Width fits the whole screen */
+    padding: 0px 2px 15px 0px; 
+    background-color: rgb(19, 20, 20); 
+    left:0px;
+    bottom:-110px;
+    font-family: 'Comfortaa';
+    font-size: 11px;
+    text-align:center;
+    opacity:1;
+    z-index:9;
+}
+/* Styling of images */
+img {
+    transition:0.4s;
+    position:relative;
+    width: 100%;
+    border: 2px solid gray !important;
+    margin-top:10px;
+}
+/* Increase size when hovering over image */
+img:hover.rounded {
+    width: 110%;
+}
+/* Color change when hovering on footer links and removing link colours */
+a {
+    transition:0.4s;
+    text-decoration:none;
+    color:gold;
+}
+a:visited {
+    color:gold;
+}
+a:hover {
+    color:red;
+}
+footer a:link {
+    color:white;
+}
+footer a:visited {
+    color:white;
+}
+footer a:hover {
+    color:gold;
+}
+
+/* Set background and positioning of text body */
+.textcontainer {
+    background-color: rgb(19, 20, 20);
+    position:relative;
+    top:200px;
+    padding-top:55px;
+    padding-bottom:100px;
+    margin-top:170px; 
+    width:100vw; 
+    opacity:0.9;
+    max-width:200%;
+    width: 50%; /* Paragraph fits half of screen */
+  }
+
+/* Set font styling for paragraph*/
+p {
+    padding-bottom: 2vw; 
+    font-family: 'Comfortaa';
+    font-size: calc(17px + 0.2vw);
+    text-align:left;
+    color:white;
+    z-index:-10;
+    line-height: 1.7em;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+/* Set font styling for header*/
+h2 {
+    position:absolute;
+    top:20px;
+    padding-top:120px;
+    width:100%;
+    text-align:center;
+    transition: 0.4s;
+    font-family: 'Comfortaa';
+    color:white;
+    z-index: 8;
+    text-shadow: 0px -1px 10px rgb(219, 219, 219);
+}
+
+/* Set font styling for paragraph subheadings*/
+h3 {
+    position:relative;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:100%;
+    text-align:left;
+    transition: 0.4s;
+    font-family: 'Comfortaa';
+    color:gold;
+    z-index: 8;
+}
+
+/* Set font styling for subheader*/
+h4 {
+    position:absolute;
+    top:120px;
+    padding-top:120px;
+    width:100%;
+    text-align:center;
+    transition: 0.4s;
+    font-family: 'Comfortaa';
+    font-size: calc(6px + 0.3vw);
+    color:rgb(172, 172, 172);
+    z-index: 8;
+    text-shadow: 0px -1px 10px rgb(133, 133, 133);
+}
+
+/* Disable x-scrolling and set background */
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* Set color of subheadings, remove backgrounds and borders*/
+.subheading {
+    color:gold;
+    height:fit-content;
+    background:transparent;
+    border:none;
+    opacity:0.9;
+}
+
+/* Set background styling*/
+.background {
+    position:fixed;
+    top:-300px;
+    background-size: cover;  
+    left:-1px;
+    height:1302px; 
+    width:1950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: brightness(45%);
+}
+
+/* Override white background colour*/
+body {
+    background-color: transparent !important;
+}
+
+/* When screen is small enough, make paragraphs center aligned*/
+@media screen and (max-width: 1000px) {
+    p {
+      text-align:center;
+      padding-right:30px;
+      padding-left:30px;
+    }
+    h3 {
+        text-align:center;
+    }
+  }
+
+/* Configuration of scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background:rgb(19, 20, 20);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }

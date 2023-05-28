@@ -1,0 +1,88 @@
+/* Positioning of the footer */
+footer {    
+    position: absolute;
+    bottom:-40px;
+    width: 100%; /* Width fits the whole screen */
+    padding: 0px 2px 15px 0px; 
+    background-color: rgb(19, 20, 20); 
+    font-family: 'Comfortaa';
+    font-size: 11px;
+    text-align:center;
+    z-index:9;
+    color:white;
+}
+/* Color change when hovering on footer links and removing link colours */
+footer a {
+    transition:0.4s;
+    text-decoration:none;
+}
+footer a:link {
+    color:white;
+}
+footer a:visited {
+    color:white;
+}
+footer a:hover {
+    color:gold;
+}
+
+.nav-link {
+    transition:0.4s;
+  }
+.nav-link:hover {
+    color:gold;
+    font-size:17px;
+    opacity:1.0;
+}
+
+/*Positoning of the header*/
+h1 {
+    width:100%;
+    position: absolute;
+    top:100px;
+    text-align:center;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    color:white;
+    text-shadow: 0px -1px 10px rgb(219, 219, 219);
+}
+
+/*Styling of main paragraph of text*/
+.textcontainer {
+    padding-top:40px;
+    background-color:rgb(19, 20, 20);
+    opacity:0.95;
+    padding-bottom:50px;
+}
+
+/* Create a feedback class to position entire form */
+.feedback {
+    position: absolute; 
+    width: 100%;
+    top: 270px;
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    color:white;
+    text-shadow: 0px -1px 10px rgba(27, 27, 27, 0.5);
+    opacity:0.75;
+}
+/* Set a background image */
+html {
+    /* Background by Jason Blackzeye: https://unsplash.com/photos/FzURx0rFhUk*/
+    background: url('https://images.unsplash.com/photo-1509226704106-8a5a71ffbfa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center fixed;     
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+/* Configuration of scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background:rgb(19, 20, 20);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }

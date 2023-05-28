@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Set webpage language to english -->
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Set width for device width-->
+      <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+      <!-- Import fonts-->
+      <link href='../css/CourseAndCareer_layout.css' rel='stylesheet'>
+      <!-- Import css stylesheet -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="../javascript/CourseAndCareer.js"></script>
+      <title>Career</title>
+      <!-- Set title-->
+   </head>
+   <body>
+      <!-- Set up navbar -->
+      <nav class=" fixed-top navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+         <!-- Responsiveness - collapses into a button if screen is small-->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Navbar contents-->
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" style="color:green" href="index.html">&#10022;</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Course and Career <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PastExperiences.html">Past Experiences</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="Feedback.html">Feedback</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="CurrentExperience.html">Current Experience</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="AboutMe.html">About Me</a>
+               </li>
+            </ul>
+            <!-- Search bar-->
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+         </div>
+      </nav>
+      <!-- Background by vtas: https://www.deviantart.com/vtas/art/Pokemon-Horizon-312267168 -->
+      <img class="background" src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/094dd56f-e7ea-4b0e-b54f-fdc2c99effd9/d55wyw0-2667ea73-4843-488c-b110-5ee6cbd00d3b.jpg/v1/fill/w_1024,h_683,q_75,strp/pokemon__horizon_by_vtas_d55wyw0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6IlwvZlwvMDk0ZGQ1NmYtZTdlYS00YjBlLWI1NGYtZmRjMmM5OWVmZmQ5XC9kNTV3eXcwLTI2NjdlYTczLTQ4NDMtNDg4Yy1iMTEwLTVlZTZjYmQwMGQzYi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Inue1YPJ5jDwUFV67QcvqU_AZ68bf7TEfyHR3Nt404M' alt='background'>
+
+      <!-- Interactive slideshow with a title, image, caption and buttons. -->
+      <img id="imagechoose" src="https://i.imgur.com/Hpgm8do.png" alt='Display image' class="sideimg">
+      <div id="titlechoose" class="slideheader d-flex"></div>
+      <div id="captionchoose" class="slidecaption d-flex"></div>
+      <div id="parachoose" class="slidetext d-flex justify-content-center"></div>
+
+      <!-- Buttons and current slide name -->
+      <div class="imgcontainer">
+         <div class= 'row justify-content-center'>
+            <div class = "col">
+               <h3 onclick="backpage()" > &#11164; </h3>
+            </div>
+            <div class = "col text-nowrap box">
+               <h2 id="topic">Cyber Security Analyst</h2>
+            </div>
+            <div class = "col">
+               <h3 onclick="nextpage()" > &#10148; </h3>
+            </div>
+         </div>
+      </div>
+      <!-- Paragraph of text/content -->
+      <div class="textcontainer container-fluid">
+      <div class= 'row justify-content-center'>
+         <div class = "col mx-5">
+            <!-- Display all options in the slides above -->
+            <p class="text-muted" id = "jobstring">#</p>
+            <h4>Topics I am learning <br>_________ ____________ _ _</h4>
+            <p>My current course is DISM, or Diploma in Infocomm Security Management. This course is taught by Singapore Polytechnic's School of Computing, and equips me with multiple skills. These include, but is not limited to:</p>
+            <!-- Bootstrap list -->
+            <div class="list-group list-group-flush ">
+               <div class="list-group-item list-group-item-action bg-dark">COMMUNICATING FOR PROJECT EFFECTIVENESS (PROPOSAL)</div>
+               <div class="list-group-item list-group-item-action bg-dark">CRITICAL AND ANALYTICAL THINKING</div>
+               <div class="list-group-item list-group-item-action bg-dark">MATHEMATICS</div>
+               <div class="list-group-item list-group-item-action bg-dark ">EDUCATION AND CAREER GUIDANCE 1 (SOC)</div>
+               <div class="list-group-item list-group-item-action bg-dark">FRONT-END WEB DEVELOPMENT</div>
+               <div class="list-group-item list-group-item-action bg-dark">FUNDAMENTALS OF PROGRAMMING</div>
+               <div class="list-group-item list-group-item-action bg-dark">FUNDAMENTALS OF COMPUTING</div>
+            </div>
+            <p><br>The list shows the topics I am currently being taught in Year One. It is to note that not all modules are related to Cyber Security or programming, but instead related to conversational and social skills. Singapore Polytechnic prides itself in having a system that prepares students not only for office work, but also for presentation and conversational skills that is crucial for the working life. If you want to learn more about my school life, click <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management/what-you'll-study" target="_blank">here</a> to see the details of each subject and the other subjects I will be taught in later years.</p>
+         </div>
+      </div>
+      <div class= 'row justify-content-center'>
+         <div class = "col mx-5">
+            <h4>Future Career <br>_________ ____________ _ _</h4>
+            <p> Thanks to Singapore Polytechic, My career prospects has widened. Based on their pay and how much I would be able to excel in it, here are the possible job prospects I am considering for my career, seen above. As I have a large interest in programming, and having taken a course in DISM, many jobs related to IT can be considered to be an ideal career path. Jobs related to cyber security is on the top of my list as it is currently a sector that is in high demand in Singapore, and is relatively well-paying without any strenuous work.
+               <br><br> I choose my current course, DISM, with this in mind, so that I can find a good computer security job to succeed in life. If I am unable to get such a job in the future, I would lean back on front-end web development as I am adept in both design and programming, making this a viable option as such a job requires both skills and allows me to make a decent income. As a side hobby or job, I could be a game developer or software engineer, as creating games are relaxing to me and doing so will not tire me out when I have to handle two jobs at once. 
+            </p>
+         </div>
+      </div>
+      <!-- Contact details -->
+      <footer style="color:white;">______________________________________________________________________________________________________________________________________________________________________________________________________________<br /><br /> Contact Me<br />
+         DANIELONG.21@ichat.sp.edu.sg | 90601955 | <a href="https://twitter.com/downvote_me" target="_blank">https://twitter.com/downvote_me</a> 
+      </footer>
+    </div>
+   </body>
+</html>

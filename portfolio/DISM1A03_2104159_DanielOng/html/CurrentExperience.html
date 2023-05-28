@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Set webpage language to english -->
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Set width for device width-->
+      <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+      <!-- Import fonts-->  
+      <link href='../css/CurrentExperience_layout.css' rel='stylesheet'>
+      <!-- Import css stylesheet -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="../javascript/CurrentExperience.js"></script>
+      <title>Current Experience</title>
+      <!-- Set title-->
+   </head>
+   <body>
+      <!-- Background by Vivek Trivadi: https://unsplash.com/photos/cHjfZs5_0b8 -->
+      <img class="background" src='https://images.unsplash.com/photo-1531510338634-50f79176ad5a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80' alt="background">
+      <!-- Set up navbar -->
+      <nav class=" fixed-top navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+         <!-- Responsiveness - collapses into a button if screen is small-->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Navbar contents-->
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" style="color:green" href="index.html">&#10022;</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Current Experience <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="CourseAndCareer.html">Course and Career</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="Feedback.html">Feedback</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PastExperiences.html">Past Experiences</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="AboutMe.html">About Me</a>
+               </li>
+            </ul>
+            <!-- Search bar-->
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+         </div>
+      </nav>
+      <h2>Overall Experience<br>__ __ _________ __ __</h2>
+      <h4>My life in Singapore Polytechnic.</h4>
+
+      <!-- Modal - takes src data from image clicked -->
+      <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <img src="#" class="imagepreview" style="width: 100%;" alt="image preview">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="textcontainer container-fluid">
+         <div class= 'row justify-content-center'>
+            <div class = "col mx-5 px-2 col-sm-12 col-12  col-lg-3">
+               <a class="pop">
+                  <!--Image from sp.edu.sg -->
+                  <img class = "rounded" src="https://www.sp.edu.sg/images/default-source/default-album/thumbnails-courses-security1.jpg?sfvrsn=81d8ac4_0" alt='SP computer room'>
+               </a>
+               <h5>SP's computer rooms</h5>
+            </div>
+            <div class = "col mx-5 px-2 col-sm-12 col-12  col-lg-3">
+               <a class="pop">
+                  <!--Image from sp.edu.sg -->
+                  <img class = "rounded" src="https://www.sp.edu.sg/images/default-source/sp-main/about-sp_2.jpg?size=600" alt='SP building'>
+               </a>
+               <h5>The building</h5>
+            </div>
+            <div class = "col mx-5 px-2 col-sm-12 col-12  col-lg-3">
+               <a class="pop">
+                  <!--Image from sp.edu.sg -->
+                  <img class = "rounded" src="https://www.sp.edu.sg/images/default-source/content-migration/content-migration/t721-1-jpg.jpg?Status=Master&sfvrsn=445a9158_0" alt='SP classroom'>
+                  <h5>SP classroom</h5>
+               </a>
+            </div>
+         </div>
+         <!-- Main text content -->
+         <div class= 'row justify-content-center'>
+            <div class = "col mx-5 col-sm-12 col-12  col-lg-3 box">
+               <p>The main difference between secondary school life and Singapore Polytechnic is very noticeable. Instead of basic subjects like Mathematics, Chemistry and English, SP teaches specialized subjects that cater to the aspirations of every student. Students who enroll into Singapore Polytechnic and want to go for a specific course that helps in their career can do so, and will have lessons specialized to their fields of interest. For example, as I have much interest in programming, I joined Singapore Polytechnic's School of Computing, which has subjects that build skills essential to programming in the working life. The timetable below shows a template of what I learn every day.</p>
+            </div>
+            <div class = "col mx-5 col-sm-12 col-12  col-lg-3 box">
+               <p> Singapore Polytechnic was a breath of fresh air compared to school life before. It was perfect for someone like me who wanted to hone their own talents without needing to juggle academic subjects along with it. Singapore Polytechnic not only gave me a chance to improve what I do best in through lessons, but also gives a lot of free time in their timetable to let me work on my personal projects. To top it off, the general athmosphere of the campus is constructed to be relaxing, keeping us motivated while we study. With helpful teachers and informative lessons, I would say that Singapore Polytechnic is a dream come true for my academic life. </p>
+            </div>
+            <div class = "col mx-5 col-sm-12 col-12  col-lg-3 box">
+               <p>If you want to enroll into a local Polytechnic, you should first consider your options in the future. If you already have a talent you want to build upon, Polytechnics provide the perfect environment for you to cultivate it. After all, all you need to do is to enjoy what you do. To learn more about Singapore Polytechnic, visit their page <a href="https://www.sp.edu.sg/" target="_blank">here.</a></p>
+            </div>
+         </div>
+         <h5>Sample timetable of an SOC student</h5>
+         <!-- Creation of table -->
+         <table class="table table-dark table-striped table-bordered table-hover">
+            <thead>
+               <!-- Head of table -->
+               <tr>
+                  <th>Day</th>
+                  <th colspan = 9>Subject</th>
+               </tr>
+            </thead>
+            <tbody>
+               <!-- Body of table -->
+               <tr>
+                  <!-- Row 1 -->
+                  <td> Monday </td>
+                  <td colspan = 3> MATHEMATICS </td>
+                  <td colspan = 3> EDUCATION AND CAREER GUIDANCE</td>
+                  <td colspan = 3> COMMUNICATING FOR PROJECT EFFECTIVENES</td>
+               </tr>
+               <tr>
+                  <!-- Row 2 -->
+                  <td> Tuesday </td>
+                  <td colspan = 3>COMMUNICATING FOR PROJECT EFFECTIVENESS</td>
+                  <td colspan = 3>FRONT-END WEB DEVELOPMENT</td>
+                  <td colspan = 3>FUNDAMENTALS OF COMPUTING</td>
+               </tr>
+               <tr>
+                  <!-- Row 3 -->
+                  <td>Wednesday</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <!-- Row 4 -->
+                  <td>Thursday</td>
+                  <td colspan = 3>FUNDAMENTALS OF PROGRAMMING</td>
+                  <td colspan = 3>FUNDAMENTALS OF COMPUTING</td>
+                  <td colspan = 3>FRONT-END WEB DEVELOPMENT</td>
+               </tr>
+               <tr>
+                  <!-- Row 5 -->
+                  <td>Friday</td>
+                  <td colspan = 4>MATHEMATICS</td>
+                  <td colspan = 4>FRONT-END WEB DEVELOPMENT</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <!-- Row 6 -->
+                  <td>Saturday
+                  <td colspan = 9 rowspan = 2>MATHEMATICS</td>
+               </tr>
+               <tr>
+                  <!-- Row 7 -->
+                  <td>Sunday
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <!-- Contact details -->
+      <footer style="color:white;">______________________________________________________________________________________________________________________________________________________________________________________________________________<br /><br /> Contact Me<br />
+         DANIELONG.21@ichat.sp.edu.sg | 90601955 | <a href="https://twitter.com/downvote_me" target="_blank">https://twitter.com/downvote_me</a> 
+      </footer>
+   </body>
+</html>
